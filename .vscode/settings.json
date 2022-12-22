@@ -1,0 +1,6 @@
+{
+    "diffEditor.codeLens": false,
+    "editor.minimap.enabled": true,
+    "editor.minimap.autohide": false,
+    "git.ignoreLimitWarning": true
+}
