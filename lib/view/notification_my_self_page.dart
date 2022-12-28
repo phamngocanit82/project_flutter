@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../base_Widget.dart';
 import '/data/notification_my_self_data.dart';
 import '/model/notification_my_self_model.dart';
 import '/view/widget/notification_widget.dart';
 
-class NotificationMySelfPage extends StatefulWidget {
+class NotificationMySelfPage extends BaseWidget {
   const NotificationMySelfPage({Key? key}) : super(key: key);
   @override
   State<NotificationMySelfPage> createState() => _NotificationMySelfPageState();

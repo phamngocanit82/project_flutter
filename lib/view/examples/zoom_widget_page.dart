@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:zoom_widget/zoom_widget.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class ZoomWidgetPage extends StatefulWidget {
+class ZoomWidgetPage extends BaseWidget {
   const ZoomWidgetPage({Key? key}) : super(key: key);
   @override
   State<ZoomWidgetPage> createState() => _ZoomWidgetState();
 }
 
-class _ZoomWidgetState extends State<ZoomWidgetPage> {
+class _ZoomWidgetState extends BaseState<ZoomWidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

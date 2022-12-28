@@ -1,16 +1,17 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../../base_widget.dart';
 import 'card_back_widget.dart';
 import 'card_front_widget.dart';
 import '/constants.dart';
 
-class CardPage extends StatefulWidget {
+class CardPage extends BaseWidget {
   const CardPage({Key? key}) : super(key: key);
   @override
   State<CardPage> createState() => _CardPageState();
 }
 
-class _CardPageState extends State<CardPage> {
+class _CardPageState extends BaseState<CardPage> {
   double _rotationFactor = 0;
   @override
   Widget build(BuildContext context) {

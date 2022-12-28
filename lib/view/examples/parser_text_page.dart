@@ -2,15 +2,16 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class ParserTextPage extends StatefulWidget {
+class ParserTextPage extends BaseWidget {
   const ParserTextPage({Key? key}) : super(key: key);
   @override
   State<ParserTextPage> createState() => _ParserTextState();
 }
 
-class _ParserTextState extends State<ParserTextPage> {
+class _ParserTextState extends BaseState<ParserTextPage> {
   final bool _hasCallSupport = false;
   Future<void>? _launched;
   String _phone = '';

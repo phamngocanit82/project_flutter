@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class ShimmerPage extends StatefulWidget {
+class ShimmerPage extends BaseWidget {
   const ShimmerPage({Key? key}) : super(key: key);
   @override
   State<ShimmerPage> createState() => _ShimmerPage();
 }
 
-class _ShimmerPage extends State<ShimmerPage> {
+class _ShimmerPage extends BaseState<ShimmerPage> {
   bool _enabled = true;
   @override
   Widget build(BuildContext context) {

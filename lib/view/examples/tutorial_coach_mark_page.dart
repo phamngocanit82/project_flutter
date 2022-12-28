@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class TutorialCoachMarkPage extends StatefulWidget {
+class TutorialCoachMarkPage extends BaseWidget {
   const TutorialCoachMarkPage({Key? key}) : super(key: key);
   @override
   State<TutorialCoachMarkPage> createState() => _TutorialCoachMarkState();
 }
 
-class _TutorialCoachMarkState extends State<TutorialCoachMarkPage> {
+class _TutorialCoachMarkState extends BaseState<TutorialCoachMarkPage> {
   late TutorialCoachMark tutorialCoachMark;
 
   GlobalKey keyButton = GlobalKey();

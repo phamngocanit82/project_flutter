@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/avd.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
 const List<String> assetNames = <String>[
@@ -56,13 +57,13 @@ const List<String> uriNames = <String>[
   'https://upload.wikimedia.org/wikipedia/commons/b/b4/Chess_ndd45.svg',
 ];
 
-class SvgPage extends StatefulWidget {
+class SvgPage extends BaseWidget {
   const SvgPage({Key? key}) : super(key: key);
   @override
   State<SvgPage> createState() => _SvgState();
 }
 
-class _SvgState extends State<SvgPage> {
+class _SvgState extends BaseState<SvgPage> {
   /// Assets that will be rendered.
   final List<Widget> _painters = <Widget>[];
   late double _dimension;

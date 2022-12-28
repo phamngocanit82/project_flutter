@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import '/utils/utils_platform.dart';
+import '../../utils/utils_device.dart';
 import '/constants.dart';
 
 class NotificationWidget extends StatelessWidget {

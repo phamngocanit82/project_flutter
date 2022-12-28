@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import '../base_widget.dart';
 import '/data/order_data.dart';
 import '/model/order_model.dart';
 import '/utils/utils_style.dart';
 import '/view/widget/order_widget.dart';
 
-class OrderPage extends StatefulWidget {
+class OrderPage extends BaseWidget {
   const OrderPage({Key? key}) : super(key: key);
   @override
   State<OrderPage> createState() => _OrderPageState();
 }
 
-class _OrderPageState extends State<OrderPage> {
+class _OrderPageState extends BaseState<OrderPage> {
   List<OrderModel> orders = <OrderModel>[];
   @override
   void initState() {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../base_widget.dart';
 import '/data/serialization/album.dart';
 import '/data/serialization/pollution_station.dart';
 import '/repository/api_exception_mapper.dart';
@@ -6,18 +7,18 @@ import '/repository/api_repository.dart';
 import '/repository/api_rest_repository.dart';
 import '/constants.dart';
 
-class ApiRepositoryPage extends StatefulWidget {
+class ApiRepositoryPage extends BaseWidget {
   const ApiRepositoryPage({Key? key}) : super(key: key);
   @override
   State<ApiRepositoryPage> createState() => _ApiRepositoryState();
 }
 
-class _ApiRepositoryState extends State<ApiRepositoryPage> {
+class _ApiRepositoryState extends BaseState<ApiRepositoryPage> {
   final ApiRepository apiRepository = ApiRestRepository();
   late Future<Album> album;
   @override
   void initState() {
-    album = apiRepository.createAlbum("ApiRepositoryPage post album");
+    album = apiRepository.createAlbum("ApiRepositoryPage post album PNA");
     album.then((value) => {debugPrint("value.title: $value.title")});
     super.initState();
   }

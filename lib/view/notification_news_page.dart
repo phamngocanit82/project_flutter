@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../base_Widget.dart';
 import '/data/notification_news_data.dart';
 import '/model/notification_news_model.dart';
 import '/view/widget/notification_widget.dart';
 
-class NotificationNewsPage extends StatefulWidget {
+class NotificationNewsPage extends BaseWidget {
   const NotificationNewsPage({Key? key}) : super(key: key);
   @override
   State<NotificationNewsPage> createState() => _NotificationNewsPageState();

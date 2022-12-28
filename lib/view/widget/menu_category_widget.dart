@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/utils/utils_platform.dart';
+import '../../utils/utils_device.dart';
 import '../../constants.dart';
 
 class MenuCategoryWidget extends StatelessWidget {

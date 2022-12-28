@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class LiteRollingSwitchPage extends StatefulWidget {
+class LiteRollingSwitchPage extends BaseWidget {
   const LiteRollingSwitchPage({Key? key}) : super(key: key);
   @override
   State<LiteRollingSwitchPage> createState() => _LiteRollingSwitchState();
 }
 
-class _LiteRollingSwitchState extends State<LiteRollingSwitchPage> {
+class _LiteRollingSwitchState extends BaseState<LiteRollingSwitchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

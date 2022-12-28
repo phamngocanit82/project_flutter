@@ -3,16 +3,16 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class QRFlutterPage extends StatefulWidget {
+class QRFlutterPage extends BaseWidget {
   const QRFlutterPage({Key? key}) : super(key: key);
   @override
   State<QRFlutterPage> createState() => _QRFlutterState();
 }
 
-class _QRFlutterState extends State<QRFlutterPage> {
+class _QRFlutterState extends BaseState<QRFlutterPage> {
   @override
   Widget build(BuildContext context) {
     const message =

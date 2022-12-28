@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '/model/favourite_model.dart';
 import '/utils/utils_language.dart';
-import '/utils/utils_platform.dart';
+import '../../utils/utils_device.dart';
 import '/utils/utils_style.dart';
 import '/constants.dart';
 import '../food_detail_page.dart';

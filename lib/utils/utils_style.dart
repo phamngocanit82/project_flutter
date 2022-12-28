@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
-import 'utils_platform.dart';
+import 'utils_device.dart';
 
 abstract class UtilsStyle {
   static PreferredSize preferredSize() => PreferredSize(

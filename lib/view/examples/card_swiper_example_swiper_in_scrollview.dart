@@ -1,13 +1,12 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
-class ExampleSwiperInScrollView extends StatefulWidget {
-  const ExampleSwiperInScrollView({Key? key}) : super(key: key);
+import '../../base_Widget.dart';
 
+class ExampleSwiperInScrollView extends BaseWidget {
+  const ExampleSwiperInScrollView({Key? key}) : super(key: key);
   @override
-  State<StatefulWidget> createState() {
-    return _ExampleState();
-  }
+  State<ExampleSwiperInScrollView> createState() => _ExampleState();
 }
 
 class _ExampleState extends State<ExampleSwiperInScrollView>

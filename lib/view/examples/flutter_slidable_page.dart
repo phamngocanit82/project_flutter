@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class FlutterSlidablePage extends StatefulWidget {
+class FlutterSlidablePage extends BaseWidget {
   const FlutterSlidablePage({Key? key}) : super(key: key);
   @override
   State<FlutterSlidablePage> createState() => _FlutterSlidableState();
 }
 
-class _FlutterSlidableState extends State<FlutterSlidablePage> {
+class _FlutterSlidableState extends BaseState<FlutterSlidablePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

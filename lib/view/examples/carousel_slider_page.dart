@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
 final List<String> imgList = [
@@ -11,14 +12,14 @@ final List<String> imgList = [
   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
 ];
 
-class CarouselSliderPage extends StatefulWidget {
+class CarouselSliderPage extends BaseWidget {
   final String title = "Carousel Slider";
   const CarouselSliderPage({Key? key}) : super(key: key);
   @override
   State<CarouselSliderPage> createState() => _CarouselSliderPageState();
 }
 
-class _CarouselSliderPageState extends State<CarouselSliderPage> {
+class _CarouselSliderPageState extends BaseState<CarouselSliderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

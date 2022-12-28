@@ -1,8 +1,9 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 import '/utils/utils_language.dart';
-import '/utils/utils_platform.dart';
+import '../../utils/utils_device.dart';
 import 'card_swiper_example_swiper_in_scrollview.dart';
 import 'card_swiper_example_custom.dart';
 
@@ -12,13 +13,13 @@ const images = <String>[
   'assets/bg2.jpeg',
 ];
 
-class CardSwiperPage extends StatefulWidget {
+class CardSwiperPage extends BaseWidget {
   const CardSwiperPage({Key? key}) : super(key: key);
   @override
   State<CardSwiperPage> createState() => _CardSwiperState();
 }
 
-class _CardSwiperState extends State<CardSwiperPage> {
+class _CardSwiperState extends BaseState<CardSwiperPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class PhotoViewPage extends StatefulWidget {
+class PhotoViewPage extends BaseWidget {
   const PhotoViewPage({Key? key}) : super(key: key);
   @override
   State<PhotoViewPage> createState() => _PhotoViewState();
 }
 
-class _PhotoViewState extends State<PhotoViewPage> {
+class _PhotoViewState extends BaseState<PhotoViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

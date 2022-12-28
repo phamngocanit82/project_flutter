@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class MaskTextInputFormatterPage extends StatefulWidget {
+class MaskTextInputFormatterPage extends BaseWidget {
   const MaskTextInputFormatterPage({Key? key}) : super(key: key);
   @override
   State<MaskTextInputFormatterPage> createState() =>
@@ -23,7 +24,8 @@ class ExampleMask {
       required this.textInputType});
 }
 
-class _MaskTextInputFormatterState extends State<MaskTextInputFormatterPage> {
+class _MaskTextInputFormatterState
+    extends BaseState<MaskTextInputFormatterPage> {
   final List<ExampleMask> examples = [
     ExampleMask(
         formatter: MaskTextInputFormatter(mask: "+# (###) ###-##-##"),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utils_platform.dart';
+import 'utils_device.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class UtilsDialog {

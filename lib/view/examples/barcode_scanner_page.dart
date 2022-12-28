@@ -2,16 +2,16 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class BarcodeScannerPage extends StatefulWidget {
+class BarcodeScannerPage extends BaseWidget {
   const BarcodeScannerPage({Key? key}) : super(key: key);
   @override
   State<BarcodeScannerPage> createState() => _BarcodeScannerState();
 }
 
-class _BarcodeScannerState extends State<BarcodeScannerPage> {
+class _BarcodeScannerState extends BaseState<BarcodeScannerPage> {
   String _scanBarcode = 'Unknown';
 
   @override

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import '../../base_widget.dart';
 import 'showcase_widget.dart';
 import 'workspace_widget.dart';
 import '/constants.dart';
 
-class SpinkitPage extends StatefulWidget {
+class SpinkitPage extends BaseWidget {
   const SpinkitPage({Key? key}) : super(key: key);
   @override
   State<SpinkitPage> createState() => _SpinkitState();
 }
 
-class _SpinkitState extends State<SpinkitPage> {
+class _SpinkitState extends BaseState<SpinkitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

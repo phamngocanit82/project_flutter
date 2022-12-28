@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
 enum AppState {
@@ -13,13 +14,13 @@ enum AppState {
   cropped,
 }
 
-class ImageCropperPage extends StatefulWidget {
+class ImageCropperPage extends BaseWidget {
   const ImageCropperPage({Key? key}) : super(key: key);
   @override
   State<ImageCropperPage> createState() => _ImageCropperState();
 }
 
-class _ImageCropperState extends State<ImageCropperPage> {
+class _ImageCropperState extends BaseState<ImageCropperPage> {
   XFile? _pickedFile;
   CroppedFile? _croppedFile;
 

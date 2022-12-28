@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../base_Widget.dart';
 import '/utils/utils_language.dart';
 import '/utils/utils_style.dart';
 import '/view/notification_news_page.dart';
@@ -6,7 +7,7 @@ import '/view/notification_service_page.dart';
 import '../constants.dart';
 import '/view/notification_my_self_page.dart';
 
-class NotificationPage extends StatefulWidget {
+class NotificationPage extends BaseWidget {
   const NotificationPage({Key? key}) : super(key: key);
   @override
   State<NotificationPage> createState() => _NotificationPageState();

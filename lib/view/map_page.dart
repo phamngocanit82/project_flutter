@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
+import '../base_widget.dart';
 import '/googlemap/googlemap_apppage.dart';
 import '/googlemap/animate_camera.dart';
 import '/googlemap/lite_mode.dart';
@@ -36,13 +37,13 @@ final List<GoogleMapExampleAppPage> _allPages = <GoogleMapExampleAppPage>[
   const TileOverlayPage(),
 ];
 
-class MapPage extends StatefulWidget {
+class MapPage extends BaseWidget {
   const MapPage({Key? key}) : super(key: key);
   @override
   State<MapPage> createState() => _MapPageState();
 }
 
-class _MapPageState extends State<MapPage> {
+class _MapPageState extends BaseState<MapPage> {
   final GoogleMapsFlutterPlatform mapsImplementation =
       GoogleMapsFlutterPlatform.instance;
   //if (mapsImplementation is GoogleMapsFlutterAndroid) {

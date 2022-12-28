@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import '../base_widget.dart';
 import '/utils/utils_language.dart';
-import '/utils/utils_platform.dart';
+import '../utils/utils_device.dart';
 import '/utils/utils_style.dart';
 import '/constants.dart';
 import 'examples/carousel_slider_page.dart';
@@ -36,13 +37,13 @@ import 'clay_container_page.dart';
 import 'contact_page.dart';
 import 'lite_rolling_switch_page.dart';*/
 
-class MenuPage extends StatefulWidget {
+class MenuPage extends BaseWidget {
   const MenuPage({Key? key}) : super(key: key);
   @override
   State<MenuPage> createState() => _MenuPageState();
 }
 
-class _MenuPageState extends State<MenuPage> {
+class _MenuPageState extends BaseState<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import '../../base_widget.dart';
 import '../widget/card_swiper_form_widget.dart';
 
 const images = <String>[
@@ -8,7 +9,7 @@ const images = <String>[
   'assets/bg2.jpeg',
 ];
 
-class ExampleCustom extends StatefulWidget {
+class ExampleCustom extends BaseWidget {
   const ExampleCustom({Key? key}) : super(key: key);
 
   @override
@@ -17,7 +18,7 @@ class ExampleCustom extends StatefulWidget {
   }
 }
 
-class _ExampleCustomState extends State<ExampleCustom> {
+class _ExampleCustomState extends BaseState<ExampleCustom> {
   //properties want to custom
   late int _itemCount;
 

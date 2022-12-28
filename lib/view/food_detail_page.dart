@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../base_widget.dart';
 import '/data/favourite_data.dart';
 import '/model/favourite_model.dart';
 import '/utils/utils_style.dart';
@@ -6,7 +7,7 @@ import '/view/widget/food_tile_widget.dart';
 import '/view/widget/rating_widget.dart';
 import '../constants.dart';
 
-class FoodDetailPage extends StatefulWidget {
+class FoodDetailPage extends BaseWidget {
   final String? imgUrl;
   final String? name;
   final String? desc;
@@ -18,7 +19,7 @@ class FoodDetailPage extends StatefulWidget {
   State<FoodDetailPage> createState() => _FoodDetailPageState();
 }
 
-class _FoodDetailPageState extends State<FoodDetailPage> {
+class _FoodDetailPageState extends BaseState<FoodDetailPage> {
   List<FavouriteModel> favourites = <FavouriteModel>[];
   @override
   void initState() {

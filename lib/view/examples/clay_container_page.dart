@@ -1,8 +1,9 @@
 import 'package:clay_containers/clay_containers.dart';
 import 'package:flutter/material.dart';
+import '../../base_Widget.dart';
 import '/constants.dart';
 
-class ClayContainerPage extends StatefulWidget {
+class ClayContainerPage extends BaseWidget {
   const ClayContainerPage({Key? key}) : super(key: key);
   @override
   State<ClayContainerPage> createState() => _ClayContainerState();

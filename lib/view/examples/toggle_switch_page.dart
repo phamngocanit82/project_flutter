@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class ToggleSwitchPage extends StatefulWidget {
+class ToggleSwitchPage extends BaseWidget {
   const ToggleSwitchPage({Key? key}) : super(key: key);
   @override
   State<ToggleSwitchPage> createState() => _ToggleSwitchState();
 }
 
-class _ToggleSwitchState extends State<ToggleSwitchPage> {
+class _ToggleSwitchState extends BaseState<ToggleSwitchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

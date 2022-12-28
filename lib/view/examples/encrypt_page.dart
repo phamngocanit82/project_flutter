@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:encrypt/encrypt.dart' as encrypt;
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class EncryptPage extends StatefulWidget {
+class EncryptPage extends BaseWidget {
   const EncryptPage({super.key});
 
   @override
   State<EncryptPage> createState() => _EncryptState();
 }
 
-class _EncryptState extends State<EncryptPage> {
+class _EncryptState extends BaseState<EncryptPage> {
   @override
   Widget build(BuildContext context) {
     const plainText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';

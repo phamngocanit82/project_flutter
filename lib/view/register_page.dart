@@ -1,20 +1,21 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import '../base_widget.dart';
 import '/blocs/authentication_bloc.dart';
 import '/utils/utils_style.dart';
 import '/utils/utils_dialog.dart';
 import '/utils/utils_language.dart';
-import '/utils/utils_platform.dart';
+import '../utils/utils_device.dart';
 import '../constants.dart';
 import 'login_page.dart';
 
-class RegisterPage extends StatefulWidget {
+class RegisterPage extends BaseWidget {
   const RegisterPage({Key? key}) : super(key: key);
   @override
   State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _RegisterPageState extends BaseState<RegisterPage> {
   AuthenticationBloc authenticationBloc = AuthenticationBloc();
 
   TextEditingController nameController = TextEditingController();

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../base_Widget.dart';
 import '/data/notification_service_data.dart';
 import '/model/notification_service_model.dart';
 import '/view/widget/notification_widget.dart';
 
-class NotificationServicePage extends StatefulWidget {
+class NotificationServicePage extends BaseWidget {
   const NotificationServicePage({super.key});
   @override
   State<NotificationServicePage> createState() =>

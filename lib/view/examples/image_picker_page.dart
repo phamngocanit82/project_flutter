@@ -4,15 +4,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
+import '../../base_widget.dart';
 import '/constants.dart';
 
-class ImagePickerPage extends StatefulWidget {
+class ImagePickerPage extends BaseWidget {
   const ImagePickerPage({Key? key}) : super(key: key);
   @override
   State<ImagePickerPage> createState() => _ImagePickerState();
 }
 
-class _ImagePickerState extends State<ImagePickerPage> {
+class _ImagePickerState extends BaseState<ImagePickerPage> {
   List<XFile>? _imageFileList;
 
   void _setImageFileListFromFile(XFile? value) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../base_widget.dart';
 import '/data/favourite_data.dart';
 import '/data/food_data.dart';
 import '/model/favourite_model.dart';
@@ -9,13 +10,13 @@ import '/view/widget/menu_category_widget.dart';
 import '/view/widget/favourite_widget.dart';
 import '/view/widget/food_widget.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends BaseWidget {
   const HomePage({super.key});
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends BaseState<HomePage> {
   List<FavouriteModel> favourites = <FavouriteModel>[];
   List<FoodModel> foods = <FoodModel>[];
   static List<String> categoryTitle = <String>[

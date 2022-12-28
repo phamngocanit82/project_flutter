@@ -1,15 +1,16 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'base_widget.dart';
 import 'utils/utils_language.dart';
-import 'utils/utils_platform.dart';
+import 'utils/utils_device.dart';
 
-class SplashPage extends StatefulWidget {
+class SplashPage extends BaseWidget {
   const SplashPage({super.key});
   @override
   State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> {
+class _SplashPageState extends BaseState<SplashPage> {
   startTime() async {
     return Timer(const Duration(seconds: 2), navigationPage);
   }
