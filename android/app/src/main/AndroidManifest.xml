@@ -1,11 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_cuisine">
+    package="com.example.project_flutter">
    <application
         android:label="project_flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCG6gO58T9ox_72ZCLw6SESyEp7GkkZUis"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCG6gO58T9ox_72ZCLw6SESyEp7GkkZUis"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

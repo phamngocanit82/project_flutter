@@ -8,7 +8,6 @@ import 'examples/carousel_slider_page.dart';
 import 'examples/card_page.dart';
 import 'examples/image_picker_page.dart';
 import 'examples/mask_text_input_formatter_page.dart';
-import 'examples/barcode_scanner_page.dart';
 import 'examples/parser_text_page.dart';
 import 'examples/zoom_widget_page.dart';
 import 'examples/card_swiper_page.dart';
@@ -140,22 +139,6 @@ class _MenuPageState extends BaseState<MenuPage> {
                     MaterialPageRoute(
                         builder: (context) =>
                             const MaskTextInputFormatterPage()));
-              },
-            ),
-            ListTile(
-              leading: Image.asset("assets/ic_menu_history.png",
-                  width: 40.0, height: 40.0, color: colorMenu),
-              title: Text(
-                UtilsLanguage.shared
-                    .language("barcode scanner", "Barcode Scanner"),
-                style: TextStyle(
-                    fontSize: 13 * UtilsDevice.shared.ratio, color: colorMenu),
-              ),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const BarcodeScannerPage()));
               },
             ),
             ListTile(
